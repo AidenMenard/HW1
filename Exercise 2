@@ -1,0 +1,18 @@
+score = input("What is your credit score? ")
+
+score = int(score)
+
+if score < 300 or score > 850:
+    print("Invalid score.")
+elif score >= 750:
+    print("Excellent - Loan Approved")
+    print("Interest rate: Low")
+elif score >= 700:
+    print("Good - Loan Approved with Review")
+    print("Interest rate: Low")
+elif score >= 600:
+    print("Fair - Loan Conditional")
+    print("Seek credit improvement.")
+else:
+    print("Poor - Loan Denied")
+    print("Seek credit improvement.")

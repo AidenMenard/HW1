@@ -1,0 +1,16 @@
+def format_greeting(name, title="Customer"):
+    name = name.strip().title()
+
+    if name == "":
+        return "Hello, Valued Customer!"
+
+    first_name = name.split()[0]
+
+    return "Hello, " + first_name + " (" + title + ")!"
+
+
+full_name = input("What is your full name? ")
+
+greeting = format_greeting(full_name)
+
+print(greeting)

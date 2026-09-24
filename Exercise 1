@@ -1,0 +1,14 @@
+revenue = input("What is the revenue? ")
+cost = input("What is the cost? ")
+
+revenue = float(revenue)
+cost = float(cost)
+
+profit = revenue - cost
+
+if revenue > 0:
+    margin = (profit / revenue) * 100
+    print("Profit: $" , round(profit, 2))
+    print("Margin:" , round(margin, 2) , "%")
+else:
+    print("Invalid revenue.")
